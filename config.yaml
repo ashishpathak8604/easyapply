@@ -1,0 +1,75 @@
+# AI Job Application Assistant - Phase 1 configuration
+#
+# Personal values are intentionally blank. Fill them in locally; do not commit
+# real personal data into a shared copy of this file.
+#
+# All job sources are disabled by default. Live collection additionally requires
+# the explicit --allow-network CLI flag, which must only be used after you have
+# approved external access.
+
+# --- Personal profile defaults (used when the resume does not contain them) ---
+target_roles: []
+preferred_locations: []
+experience_level: "entry-level"
+excluded_keywords: []
+daily_application_limit: 10
+expected_salary: ""
+notice_period: ""
+work_authorization: ""
+phone: ""
+email: ""
+linkedin_url: ""
+github_url: ""
+portfolio_url: ""
+
+# --- Local file locations (relative paths are resolved from this file) ---
+paths:
+  resume: "data/resume.pdf"
+  profile: "data/profile.json"
+  database: "data/jobs.db"
+  log: "logs/app.log"
+
+# --- AI provider abstraction (no provider is called during Phase 1 by default) ---
+ai:
+  provider: "ollama"          # one of: ollama, gemini, groq
+  model: "llama3.1"
+  timeout_seconds: 120
+  max_retries: 3
+  backoff_seconds: 2.0
+  # Must be explicitly set to true, and --use-ai passed, before any resume text
+  # is sent to an AI provider.
+  resume_data_transfer_approved: false
+
+# --- Job sources ---
+sources:
+  greenhouse:
+    enabled: false
+    company_slugs: []
+  lever:
+    enabled: false
+    company_slugs: []
+  adzuna:
+    enabled: false
+    country: "in"
+    what: ""
+    where: ""
+    results_per_page: 50
+    max_days_old: 30
+  remoteok:
+    enabled: false
+
+# --- Collection behaviour ---
+collection:
+  timeout_seconds: 20
+  max_retries: 3
+  backoff_seconds: 1.0
+  rate_limit_seconds: 0.5
+  user_agent: "job-assistant-phase1/0.1 (personal use)"
+
+# --- Matching settings (reserved for Phase 2; not used in Phase 1) ---
+matching:
+  min_score: 60
+  llm_review_top_n: 20
+  weights:
+    semantic_similarity: 0.6
+    skill_overlap: 0.4

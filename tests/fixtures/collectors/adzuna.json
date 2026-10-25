@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "id": "adzuna-301",
+      "title": "Machine Learning Engineer",
+      "company": {"display_name": "Gamma Labs"},
+      "location": {"display_name": "Pune, India"},
+      "description": "Train and evaluate models with Python.",
+      "redirect_url": "https://www.adzuna.in/land/ad/adzuna-301",
+      "created": "2026-10-18T12:00:00Z"
+    },
+    {
+      "id": "adzuna-302",
+      "title": "Remote Support Engineer",
+      "company": {"display_name": "Delta Support"},
+      "location": {"display_name": "Remote"},
+      "description": "Help customers with Linux systems.",
+      "redirect_url": "https://www.adzuna.in/land/ad/adzuna-302",
+      "created": "2026-10-17T09:00:00Z"
+    },
+    {
+      "id": "adzuna-303",
+      "title": "No Company Listing",
+      "company": {},
+      "location": {"display_name": "Mumbai, India"},
+      "description": "This entry has no company and must be skipped."
+    }
+  ]
+}

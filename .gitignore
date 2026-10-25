@@ -1,0 +1,36 @@
+# Secrets and personal data
+.env
+data/resume.pdf
+data/profile.json
+data/profile.backup.*.json
+data/jobs.db
+data/jobs.db-*
+*.sqlite
+*.sqlite3
+
+# Logs and generated artifacts
+logs/
+*.log
+screenshots/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Testing and tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

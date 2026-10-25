@@ -1,0 +1,29 @@
+[
+  {
+    "id": "lever-201",
+    "text": "Software Engineer",
+    "categories": {
+      "team": "Engineering",
+      "location": "Pune, India",
+      "commitment": "Full-time"
+    },
+    "descriptionPlain": "Write Python services and tests.",
+    "hostedUrl": "https://jobs.lever.co/example/lever-201",
+    "createdAt": 1729000000000
+  },
+  {
+    "id": "lever-202",
+    "text": "Data Analyst",
+    "categories": {
+      "location": "Remote"
+    },
+    "workplaceType": "remote",
+    "description": "<p>Analyze product data with SQL.</p>",
+    "hostedUrl": "https://jobs.lever.co/example/lever-202"
+  },
+  {
+    "id": null,
+    "text": "Invalid Posting",
+    "categories": {"location": "Delhi"}
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "id": 101,
+      "title": "Junior Python Developer",
+      "company_name": "Acme Systems",
+      "location": {"name": "Bengaluru, India"},
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/101",
+      "content": "<p>Build and test Python services with <b>FastAPI</b>.</p>",
+      "updated_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": 102,
+      "title": "Backend Engineer (Remote)",
+      "company_name": "Acme Systems",
+      "location": {"name": "Remote - India"},
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/102",
+      "content": "<div>Design REST APIs.<br>Work with SQL.</div>",
+      "first_published": "2026-10-18T08:30:00Z"
+    },
+    {
+      "id": 103,
+      "title": "",
+      "company_name": "Broken Entry",
+      "location": {"name": "Nowhere"}
+    },
+    {
+      "id": null,
+      "title": "Missing Id",
+      "company_name": "Broken Entry",
+      "location": {"name": "Nowhere"}
+    }
+  ]
+}
